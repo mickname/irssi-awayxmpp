@@ -27,3 +27,8 @@ To use the config file, write your account details to file `.sendxmpprc` in your
 If you wish to save your credentials in irssi, `/set` settings `awayxmpp_account` and `awayxmpp_password` accordingly.
 
 You can check that your settings work with `/awayxmpp_test [message]`. No error reporting is implemented, the process goes background and all output is piped to /dev/null.
+
+Known issues
+------------
+* Hilights are affected by user styles because we are catching them with irssi signal `print text`.
+* No text encoding detection stuff. Actually, it might work with other charsets than utf-8 if sendxmpp also uses the terminal encoding. So maybe its not an issue at all, works for me anyways :)
