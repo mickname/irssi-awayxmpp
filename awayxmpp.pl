@@ -4,7 +4,7 @@ use POSIX;
 use String::ShellQuote qw(shell_quote);
 use vars qw($VERSION %IRSSI);
 
-$VERSION = "1.0";
+$VERSION = "1.1";
 %IRSSI   = (
 	authors     => "Mikko \"mickname\" Luodemaa",
 	contact     => "mickname @ IRCNet",
@@ -42,7 +42,7 @@ sub send_msg {
 	my ($msg) = @_;
 
 	#Irssi::print('(echo ' . shell_quote($msg) . ' | sendxmpp' . $sendxmpp_opts . ' ' . shell_quote($xmpp_recipient) . ' > /dev/null 2>&1 )&');
-	system('(echo ' . shell_quote($msg) . ' | sendxmpp' . $sendxmpp_opts . ' ' . shell_quote($xmpp_recipient) . ' > /dev/null 2>&1 )&');
+	system('(echo ' . shell_quote($msg) . ' | sendxmpp -t' . $sendxmpp_opts . ' ' . shell_quote($xmpp_recipient) . ' > /dev/null 2>&1 )&');
 
 }
 
