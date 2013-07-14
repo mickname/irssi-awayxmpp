@@ -5,6 +5,8 @@ Sends irssi hilights and privatemessages to you via xmpp while you are away.
 
 Use with [screen_away.pl](http://scripts.irssi.org/html/screen_away.pl.html) for most convenience.
 
+![xmpp on n900](sample/n900.png)
+
 Dependencies
 ------------
 
