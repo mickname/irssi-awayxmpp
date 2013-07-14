@@ -3,6 +3,8 @@ irssi-awayxmpp
 
 Sends irssi hilights and privatemessages to you via xmpp while you are away.
 
+Use with [screen_away.pl](http://scripts.irssi.org/html/screen_away.pl.html) for most convenience.
+
 Dependencies
 ------------
 
@@ -32,3 +34,4 @@ Known issues
 ------------
 * Hilights are affected by user styles because we are catching them with irssi signal `print text`.
 * No text encoding detection stuff. Actually, it might work with other charsets than utf-8 if sendxmpp also uses the terminal encoding. So maybe its not an issue at all, works for me anyways :)
+* If your xmpp-provider does not support TLS, remove the `-t` switch from the command
