@@ -20,8 +20,8 @@ Dependencies
 Installation
 ------------
 
-1. `wget -O .irssi/scripts/awayxmpp.pl https://raw.github.com/mickname/irssi-awayxmpp/master/awayxmpp.pl`  
-2. *optional* `ln -s .irssi/scripts/awayxmpp.pl .irssi/scripts/autorun/awayxmpp.pl`  
+1. `wget -O ~/.irssi/scripts/awayxmpp.pl https://raw.github.com/mickname/irssi-awayxmpp/master/awayxmpp.pl`  
+2. *optional* `ln -s ~/.irssi/scripts/awayxmpp.pl ~/.irssi/scripts/autorun/awayxmpp.pl`  
 3. In irssi `/run awayxmpp.pl`
 
 Setup
